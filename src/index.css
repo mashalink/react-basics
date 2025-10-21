@@ -9,3 +9,15 @@ body {
   line-height: 1.6;
   background: rgb(109, 141, 168);
 }
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
