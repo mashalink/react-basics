@@ -1,22 +1,22 @@
 # React Practice Tasks
 
-A collection of practice tasks from Martin's React lectures.  
-This repository contains small exercises focused on fundamental concepts such as:
+A set of practice tasks based on Martin's React lectures.  
+The exercises are intentionally small and focus on core concepts rather than building full applications.
 
-- JSX and rendering
-- Functional components
-- Props and component composition
-- Basic layout styling in React
+## Topics covered
 
-The purpose of this repository is to practice core ideas, not to build production apps.
+- JSX and rendering flow
+- Functional components and props
+- Component composition
+- Basic layout and styling in React
 
-## Tech stack
+## Stack
 
-- React (functional components)
-- Vite (dev server & bundler)
-- Plain CSS for styling
+- React (function components)
+- Vite (dev server & bundling)
+- Plain CSS
 
-## How to run
+## Running locally
 
 ```bash
 npm install
