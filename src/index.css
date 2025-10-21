@@ -5,20 +5,24 @@
 }
 
 html,
-body,
-#root {
+body {
   height: 100%;
-}
-
-#root {
-  background: rgb(109, 141, 168);
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
 }
 
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
+  background: rgb(109, 141, 168);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }

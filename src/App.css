@@ -1,13 +1,16 @@
 .header {
   margin-bottom: 1.5rem;
+  border-bottom: 5px solid #ddd;
+  padding: 1rem;
 }
 
 main {
   flex: 1;
-  display: grid;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  align-items: center;
+  gap: 5rem;
 }
 
 .card {
@@ -15,20 +18,30 @@ main {
   flex-direction: column;
   justify-content: center;
 
-  text-align: left;
+  text-align: center;
+  min-width: 200px;
   max-width: 300px;
   background-color: white;
 
-  padding: 1rem;
+  padding: 3rem;
   font-size: 1rem;
   border: 1px solid #ddd;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .footer {
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: center; /* по горизонтали */
+  align-items: center; /* по вертикали */
+
+  text-align: center;
+  border-top: 5px solid #ddd;
   font-size: 0.9rem;
   color: #555;
+  min-height: 60px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
