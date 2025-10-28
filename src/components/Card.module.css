@@ -1,0 +1,23 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  gap: 0.5rem;
+  padding: 3rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.title {
+  color: #333;
+}
+.age {
+  color: #666;
+}

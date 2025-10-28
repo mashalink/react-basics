@@ -1,9 +1,11 @@
+import styles from "./Card.module.css";
+
 function Card({ name, title, age }) {
   return (
-    <div className="card">
-      <div className="name">{name}</div>
-      <div className="title">Title: {title}</div>
-      <div className="age">Age: {age}</div>
+    <div className={styles.card}>
+      <div className={styles.name}>{name}</div>
+      <div className={styles.title}>Title: {title}</div>
+      <div className={styles.age}>Age: {age}</div>
     </div>
   );
 }
