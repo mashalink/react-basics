@@ -4,7 +4,7 @@ import Footer from "./components/Footer.jsx";
 import Counter from "./components/Counter";
 import Card from "./components/Card";
 import "./App.css";
-import data from "./data.js";
+import data from "./data/data.js";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,7 +14,7 @@ function App() {
     setEmployees((prev) => [
       ...prev,
       {
-        id: crypto.randomUUID(), // или свой генератор
+        id: crypto.randomUUID(),
         name: "John Doe",
         title: "Software Engineer",
         age: 30,
@@ -29,7 +29,7 @@ function App() {
         <div className="card-container">
           {employees.map((employee) => (
             <Card
-              key={employee.id} // теперь безопасно
+              key={employee.id}
               name={employee.name}
               title={employee.title}
               age={employee.age}

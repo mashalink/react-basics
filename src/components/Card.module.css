@@ -15,9 +15,6 @@
   font-weight: bold;
   font-size: 1.2rem;
 }
-.title {
+.title .age {
   color: #333;
-}
-.age {
-  color: #666;
 }
