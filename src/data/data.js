@@ -5,6 +5,7 @@ export default [
     title: "CEO",
     age: 29,
     city: "New York",
+    animal: "cat",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ export default [
     title: "CTO",
     age: 35,
     city: "San Francisco",
+    animal: "dog",
   },
   {
     id: 3,
@@ -19,5 +21,6 @@ export default [
     title: "CFO",
     age: 32,
     city: "Chicago",
+    animal: "parrot",
   },
 ];

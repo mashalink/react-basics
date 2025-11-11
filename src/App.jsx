@@ -2,7 +2,7 @@ import { useState } from "react";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import Counter from "./components/Counter";
-import Card from "./components/Card";
+import CardList from "./components/CardList.jsx";
 import "./App.css";
 import data from "./data/data.js";
 
@@ -18,6 +18,7 @@ function App() {
         name: "John Doe",
         title: "Software Engineer",
         age: 30,
+        animal: "hamster",
       },
     ]);
   };
@@ -26,16 +27,7 @@ function App() {
     <div className="container">
       <Header />
       <main className="main">
-        <div className="card-container">
-          {employees.map((employee) => (
-            <Card
-              key={employee.id}
-              name={employee.name}
-              title={employee.title}
-              age={employee.age}
-            />
-          ))}
-        </div>
+        <CardList employees={employees} />
         <button onClick={handleClick}>Add Employee</button>
         <Counter count={count} setCount={setCount} />
       </main>
